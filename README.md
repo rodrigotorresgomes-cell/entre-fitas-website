@@ -5,11 +5,13 @@ A dedicated and responsive website built for the "Entre Fitas" integrated multim
 ##  Tech Stack
 * **HTML5:** Semantic structure and accessibility.
 * **CSS3:** Custom responsive layout utilizing Flexbox and CSS Grid.
-* **Vanilla JavaScript:** DOM manipulation and interactive UI elements.
+* **Vanilla JavaScript:** DOM manipulation, interactive UI elements, and theme toggling.
 
 ##  Key Highlights
-* **UI/UX Focused:** Interface built from scratch to match the project's visual identity.
-* **Responsive Design:** Fluid adaptation across mobile, tablet, and desktop screens.
+* **Dark Mode Implementation:** Features a functional light/dark theme toggle to enhance user experience and accessibility.
+* **Interactive Components:** Includes custom carousels/sliders for the merchandise section and embedded multimedia content.
+* **Sticky Anchor Navigation:** Smooth scrolling interface for a single-page application feel.
+* **UI/UX Focused:** Interface built from scratch to match the project's bold visual identity.
 * **Clean Code:** Maintainable structure without reliance on external frontend frameworks.
 
 ##  How to run locally
