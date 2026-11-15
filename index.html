@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre Fitas - Curta-Metragem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+    <img src="imagens/entrefitas_logobranco.png" alt="Entre Fitas" class="nav-logo-img logo-dark">
+    <img src="imagens/entrefitas_logopreto.png" alt="Entre Fitas" class="nav-logo-img logo-light">
+</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#curta" class="nav-link">Curta</a></li>
+                <li><a href="#sinopse" class="nav-link">Sinopse</a></li>
+                <li><a href="#capa" class="nav-link">Capa</a></li>
+                <li><a href="#merch" class="nav-link">Merch</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Mudar tema">
+                    <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-noise"></div>
+        
+      
+        <div class="hero-content">
+            <h1 class="glitch" data-text="ENTRE FITAS">ENTRE FITAS</h1>
+            <p class="subtitle">Uma curta-metragem</p>
+            <div class="hero-cta">
+                <a href="#curta" class="btn-primary">Ver Curta</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Video Section -->
+    <section class="video-section" id="curta">
+        <div class="container">
+            <h2 class="section-title">A Curta-Metragem</h2>
+            <div class="video-wrapper">
+                
+                <video controls playsinline poster="imagens/capa1.jpg">
+                    <source src="videos/filme.mov" type="video/quicktime">
+                    <source src="videos/filme.mov" type="video/mp4">
+                    O teu browser não suporta a reprodução deste vídeo.
+                </video>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Synopsis Section -->
+    <section class="synopsis-section" id="sinopse">
+        <div class="container">
+            <h2 class="section-title">Sinopse</h2>
+            <div class="synopsis-content">
+                <p>
+                    Ao entrar na universidade, uma jovem descobre um novo mundo, cheio de liberdade, curiosidade e primeiras amizades. O primeiro ano é marcado pelo entusiasmo: tudo é novidade, desde as praxes às festas, passando pela descoberta da cidade e da vida académica. No entanto, no segundo ano, o brilho inicial começa a desaparecer. A rotina instala-se, as amizades mudam, a distância de casa pesa e a solidão aparece. Entre trabalhos, pressões e silêncios, a personagem percebe que a vida universitária não é só festa, é também resistência, adaptação e autoconhecimento.
+                </p>
+                <p>
+                    Com isto, no último ano, já mais madura, ela encontra equilíbrio entre responsabilidade e afeto. Aprende a valorizar o quotidiano, constroi laços mais profundos e começa a preparar a despedida. Ao terminar o curso, olha para trás com saudade, consciente de que aquele ciclo, cheio de altos, baixos, risos e vazios a transformou para sempre.
+
+Visualmente, a narrativa evolui com a personagem: do deslumbramento inicial e cores frias do primeiro ano, à sensação de vazio e monotonia do segundo, até ao amadurecimento sereno e cores mais quentes do último.
+                </p>
+            </div>
+        </div>
+    </section>
+     <!-- Capa Section -->
+    <section class="capa-section" id="capa">
+    <div class="container">
+        <h2 class="section-title">Capa</h2>
+        <div class="capa-wrapper">
+            <img src="imagens/capa1.jpg" alt="Capa oficial Entre Fitas" class="capa-img">
+        </div>
+    </div>
+</section>
+
+    <!-- Merch Section -->
+    <section class="merch-section" id="merch">
+        <div class="container">
+            <h2 class="section-title">Merchandise</h2>
+            <p class="merch-intro">Leva uma peça exclusiva do projeto Entre Fitas</p>
+            
+            <div class="products-grid">
+                <!-- T-Shirt -->
+                <div class="product">
+                    <h3 class="product-title">T-Shirt</h3>
+                    <div class="carousel">
+                        <button class="carousel-btn prev" onclick="changeSlide('tshirt', -1)" aria-label="Anterior">‹</button>
+                        <div class="carousel-container">
+                            <div class="carousel-track" id="tshirt-track">
+                                <div class="carousel-slide active">
+                                    <img src="imagens/tshirt-frente.jpeg" alt="T-Shirt Frente" onerror="this.src='https://via.placeholder.com/600x600/000000/FFFFFF?text=T-Shirt+Frente'">
+                                    <p class="slide-label">Frente</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="imagens/tshirt-tras.jpeg" alt="T-Shirt Verso" onerror="this.src='https://via.placeholder.com/600x600/000000/FFFFFF?text=T-Shirt+Verso'">
+                                    <p class="slide-label">Verso</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" onclick="changeSlide('tshirt', 1)" aria-label="Próximo">›</button>
+                    </div>
+                    <div class="carousel-dots" id="tshirt-dots"></div>
+                </div>
+
+                <!-- Gorro -->
+                <div class="product">
+                    <h3 class="product-title">Gorro</h3>
+                    <div class="carousel">
+                        <button class="carousel-btn prev" onclick="changeSlide('gorro', -1)" aria-label="Anterior">‹</button>
+                        <div class="carousel-container">
+                            <div class="carousel-track" id="gorro-track">
+                                <div class="carousel-slide active">
+                                    <img src="imagens/gorro-frente.jpeg" alt="Gorro Branco" onerror="this.src='https://via.placeholder.com/600x600/000000/FFFFFF?text=Gorro+Frente'">
+                                    <p class="slide-label">Branco</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="imagens/gorro-verso.jpeg" alt="Gorro Preto" onerror="this.src='https://via.placeholder.com/600x600/000000/FFFFFF?text=Gorro+Verso'">
+                                    <p class="slide-label">Preto</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" onclick="changeSlide('gorro', 1)" aria-label="Próximo">›</button>
+                    </div>
+                    <div class="carousel-dots" id="gorro-dots"></div>
+                </div>
+
+                <!-- Sweat -->
+                <div class="product">
+                    <h3 class="product-title">Sweatshirt</h3>
+                    <div class="carousel">
+                        <button class="carousel-btn prev" onclick="changeSlide('sweat', -1)" aria-label="Anterior">‹</button>
+                        <div class="carousel-container">
+                            <div class="carousel-track" id="sweat-track">
+                                <div class="carousel-slide active">
+                                    <img src="imagens/sweat-frente.jpeg" alt="Sweatshirt Frente" onerror="this.src='https://via.placeholder.com/600x600/000000/FFFFFF?text=Sweat+Frente'">
+                                    <p class="slide-label">Frente</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="imagens/sweat-tras.jpeg" alt="Sweatshirt Verso" onerror="this.src='https://via.placeholder.com/600x600/000000/FFFFFF?text=Sweat+Verso'">
+                                    <p class="slide-label">Verso</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" onclick="changeSlide('sweat', 1)" aria-label="Próximo">›</button>
+                    </div>
+                    <div class="carousel-dots" id="sweat-dots"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section class="sobre-section" id="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre o Projeto</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p class="sobre-para">
+                        Este projeto multimédia tem como missão celebrar e preservar a identidade académica da UTAD, em Vila Real. A iniciativa centra-se na criação de uma curta-metragem que narra o percurso emocional do estudante, desde a chegada como caloiro até se tornar finalista, registando as tradições e a praxe local. Em paralelo, será desenvolvida uma identidade visual exclusiva aplicada a produtos como tote bags e sweatshirts, que servirão como símbolos de pertença. Tudo isto será reunido num website, criando um arquivo digital central que valoriza a cultura vivida e fortalece o espírito de comunidade académica.
+                    </p>
+                </div>
+                <div class="sobre-stats">
+                    <div class="stat-item">
+                        <div class="stat-label">Ano de Produção</div>
+                        <div class="stat-number">2025/2026</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Minutos</div>
+                        <div class="stat-number">3:40</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Equipa</div>
+                        <div class="stat-number">Beatriz Rocha, José Abreu, Maria Fernandes, Pedro Magalhães, Rodrigo Gomes
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+    <img src="imagens/entrefitas_logobranco.png" alt="Entre Fitas" class="footer-logo-img logo-dark">
+    <img src="imagens/entrefitas_logopreto.png" alt="Entre Fitas" class="footer-logo-img logo-light">
+</div>
+                <p>&copy; 2026 Entre Fitas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
